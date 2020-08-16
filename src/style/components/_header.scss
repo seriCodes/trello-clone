@@ -1,0 +1,129 @@
+.header-wrapper{
+    width: 100%;
+    background: $background-Header;
+    color: $color-white;
+    height: 2.5rem;
+    // @extend.
+    @extend.flex-center-row;
+
+    .header{
+        width: 100%;
+        @extend.flex-center-row;
+        justify-content: space-between;
+        padding-right: 0.5rem;
+
+        // border-style:groove;
+        // border-color: brown;
+        // border-width: 6px;
+        @extend.font-vertica-horizontal-centering;
+         
+
+    .header-Left{
+                border-style:groove;
+        border-color: brown;
+        border-width: 1px;
+
+        width:65%;
+         @extend.flex-right-row;
+         @media(max-width: $bigScreen-BreakPoint){
+            width:70%;
+
+        }
+    }
+}
+.header-Left-child{
+    color: white;
+    padding: 1rem;
+    // font-size: 2rem;
+
+  
+    
+    // border-style:groove;
+    // border-color: green;
+    // border-width: 6px;
+}
+.Left-child-right{
+    font-size: 2.5rem;
+    color: white;
+    text-decoration: none;
+
+   } 
+
+}
+.header-hover-fix{
+    background-color: white;
+    color: black;
+}
+
+.toggleDownMenue-Container{
+    // border-style:groove;
+    // border-color: red;
+    // border-width: 6px;
+    @extend.flex-right-column;
+    width: 100%;
+    height: 0rem;
+    background: $background-Header;
+        // overflow: initial;
+        overflow:hidden
+}
+.toggleDownMenue{
+    // border-style:groove;
+    // border-color: yellow;
+    // border-width: 5px;
+    @extend.flex-right-column;
+    position: relative;
+    // width: 100%;
+    height: 100%;
+    background: $background-Header;
+    color: $color-white;
+    // display:none;
+    // overflow: hidden;
+    overflow: initial;
+
+    .header-hover{
+        // position: absolute;
+        width: auto;//force width to stay constant when container width changes
+        // overflow: initial;
+
+        right:15px;
+        // height: auto;
+        // float: right;
+// position: absolute;
+// transition: width, height;
+// transition-property:  height;
+// transition-duration: 2s;
+
+// transition-timing-function: ease-in;
+// transition-duration: 1s;
+
+    }    
+}
+.header-right{
+    width:70%;
+
+    @extend.flex-center-row;
+align-items: center;
+// float: right;
+// border-style:groove;
+// border-color: brown;
+// border-width: 6px;
+
+}
+.header-hover{
+    // border-style:groove;
+    // border-color: green;
+    // border-width: 6px;
+// span:hover{
+    // background-color: yellow;
+
+// }.
+
+
+
+}
+.header-hover:hover{
+        // z-index: -1;
+        
+        background-color: white;
+        color: black;
+}       

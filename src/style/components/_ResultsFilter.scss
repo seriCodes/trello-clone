@@ -1,0 +1,123 @@
+.filter-headline{
+    text-align: right;
+    // font-size:88px;
+margin-bottom: 0.8rem;
+margin-right: 0.8rem;
+
+}
+.stars-container{
+    color: gold;
+    font-size:25px;
+    .stars-text{
+        color: white;
+        font-size: 0.9rem;
+    }
+    // justify-content: space-around; 
+
+}
+.stars{
+    @extend.flex-center-row;
+    // border-style:groove;
+    // border-color: pink;
+    // border-width: 6px;
+    
+    overflow: hidden;
+
+//    justify-content: space-around; 
+}
+// .moveUp{
+//     box-sizing: border-box;
+//     padding-bottom: 0.9rem;
+// }
+.stars2{
+    border-style:groove;
+    border-color: pink;
+    border-width: 6px;
+
+    justify-content: space-around;
+
+}
+.priceSlider{
+    // width: 20%;
+    // color: cornsilk;
+
+}
+.pricesAndHospitality-container{
+    // border-style:groove;
+    // border-color: pink;
+    // border-width: 3px;
+
+    @extend.flex-center-row;
+
+    justify-content: space-between;
+    margin-left: 22px ;
+    margin-right: 22px ;
+    margin-bottom: 3.5px ;
+
+}
+.nameSearch-wrapper{
+    background:white;
+    // border-radius: 0.5rem,
+    border-radius: 0.6rem;
+    width: 70%;
+    // cursor:text ;
+    // cursor: text;
+    border-style:groove;
+    border-color: green;
+    border-width: 3px;
+padding-right: 0.9rem;
+padding-left: 0.9rem;
+
+@extend.flex-center-row;
+
+}
+.nameSearch-container{
+    @extend.flex-center-row;
+ margin-top: 0.3rem;
+ margin-bottom: 1rem;
+
+}
+
+.check{
+    border-style:groove;
+    border-color: green;
+    border-width: 3px;
+}
+.pointer{
+    cursor: pointer;
+}
+.accordion-Filter{
+    // border-style: solid;
+    // border-color: chartreuse;
+    // border-width: 13px;
+
+    // background:$background-Filter;//futile
+    // color: purple;
+    padding-top: 0px;
+    padding-right: 0px;
+    padding-bottom: 0px;
+    padding-left: 0px;
+  margin-bottom: 0.9rem;
+    @extend .flex-center-column;
+    align-items: unset;
+}
+.AccordionDetails{
+    // border-style: solid;
+    // border-color: dodgerblue;
+    // border-width: 13px;
+
+    // padding-top: 80px;
+    // padding-right: 0px;
+    // padding-bottom: 0px;
+    // padding-left: 0px;
+// width: 100%;//XX
+// height: 100%;
+
+}
+.AccordionDetails-inner{
+    // border-style: solid;
+    // border-color: lightcoral;
+    // border-width: 13px;
+
+    width: 100%;
+}

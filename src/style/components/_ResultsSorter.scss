@@ -1,0 +1,108 @@
+.sortes{
+    color:gray;
+    border-width:0.1rem;
+    @extend .flex-center-row;
+    justify-content: space-between;
+    @media(max-width: $bigScreen-BreakPoint){
+        // @extend .flex-center-column;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    
+}
+    .header-hover:hover{
+        background-color: darkblue;
+        color:white;
+        border-width:0.1rem;
+        border-color: black;
+
+    }
+
+}
+.Sorters-Left-Descriptor{
+    direction:'RTL';
+    margin-top: 0.3rem;
+
+    // @media(max-width: $bigScreen-BreakPoint){
+
+    // }
+}
+.Sorters-Left{
+    // border-color:gray;
+    // border-width:0.1rem;
+    // border-style:groove;
+width: 30%;
+// z-index: 1;
+// justify-content: right;
+// justify-content: unset;
+// 
+display: flex;
+// justify-self: right;
+// direction:'RTL';//X
+flex-direction: row;
+justify-content: flex-end;
+@media(max-width: $bigScreen-BreakPoint){
+    width: 100%;
+    // justify-content: unset;
+    // position: relative;
+    // right: 10px;
+    display: flex;
+    justify-content: flex-end;
+    // justify-items: left;
+
+    .Sorters-Left-Descriptor{
+        // margin-top: 0.3rem;
+        width: 10%;
+    }
+    .Sorters-Left-selector{
+        width: 90%;
+        text-align: right;
+        // border-color:darkgreen;
+        // border-width:0.9rem;
+        // border-style:groove;
+        // display: flex;
+        // justify-content: flex-end;    
+    }
+};
+
+}
+.selector-inner{
+    width:100%;
+    text-align: right;//V
+
+}
+.Sorters-Right{
+    // border-color:gray;
+    // border-width:0.2rem;
+    // border-style:groove;
+
+    // border-left: gray;
+    // border-left-width:0.2rem;
+    // border-left-style:groove;
+    // border-left-color:gray;
+width: 70%;
+    @extend .flex-center-row;
+    @media(max-width: $bigScreen-BreakPoint){
+        width: 100%;
+        justify-content: space-between;
+
+};
+}
+.vl{
+    border-left-width:0.2rem;
+    border-left-style:groove;
+    border-left-color:#DDDDDD;
+    height: 1.35rem;
+
+}
+.selectedSorter{
+    background-color: darkblue;
+    color:white;
+    border-width:0.1rem;
+    border-color: black;
+    // width:37px;
+}
+.sortIcone{
+    // z-index: -1;//ftuile for fixing onClock issue
+}

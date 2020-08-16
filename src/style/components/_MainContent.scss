@@ -1,0 +1,130 @@
+.MainContent-Container{
+    width: 100%;
+    // height:360px;
+    //  100%;
+
+    // border-style:groove;
+    // border-color: gray;
+    // border-width: 9px;
+
+    // @extend.flex-center-column;
+    // display:table		;
+    display: flex;
+
+    // flex-direction: column;
+
+    justify-content: space-around;
+    align-items: center;
+ margin-top: 1rem;
+//include overflow
+}
+
+.MainContent{
+    // display:table-column-group;
+    
+    // border-style:groove;
+    // border-color: red;
+    // border-width: 5px;
+
+    width: 70%;
+    height:100%;
+    @extend.flex-center-row;//big screens only- unsets display:table-cell in inner tags
+    align-items: unset;
+    @media(min-width: $bigScreen-BreakPoint){
+        border-color: pink;
+        border-width: 8px;
+        display: table;// unsets flex attributes from above
+    }
+
+    @media(max-width: $larger-header-width-1){
+        width: 80%;  
+    }
+    @media(max-width: $larger-header-width-2){
+        width: 90%;  
+    }
+    @media(max-width: $larger-header-width-3){
+        width: 100%;  
+    }
+
+}
+
+.MainContent-left-AllScreens{
+    display: table-cell;
+    padding-right: 1.3rem;
+    // border-style:dotted;
+    // border-color: green;
+    // border-width: 9px;
+    width: 70%;
+    height:100%;
+    @media(max-width: $bigScreen-BreakPoint){
+        width: 100%;    
+    }
+
+
+}
+.ResultsFilter-right-big-Screen{
+    display: table-cell;
+    border-radius: 0.5rem;
+    // margin-left: 4.3rem;//X
+// padding-left: 0.rem;
+    // border-style:dashed;
+    // border-color: darkslategrey;
+    // border-width: 7px;
+    width: 30%;
+    height:100%;
+    // display: table-cell;
+    background:$background-Filter;
+    color: white;
+    @media(max-width: $bigScreen-BreakPoint){
+        width: 0%;
+    height:0%; 
+    }
+
+}
+.ResultsFilter-up-small-Screen{
+    // border-style:double;
+    // border-color: darkorchid;
+    // border-width: 10px;
+
+    width: 0%;
+    height:0%;
+    // background:$background-Filter;//futile- the accordion covers all the background
+    @media(max-width: $bigScreen-BreakPoint){
+        width: 100%;
+    // height:20%; 
+
+    // border-width: 0px;
+    // border-style:none;
+    // border-style:double;
+    // border-color: rgba(19, 223, 63, 0.582);
+    // border-width: 9px;
+
+
+    }
+}
+.ResultsFilter{
+    // overflow: auto;
+}
+.Results-sorter-container{
+    
+    // border-style:dashed;
+    // border-color: rgb(38, 209, 209);
+    // border-width: 7px;
+
+    width: 100%;
+    // height:20%;
+// display: table-cell;
+}
+.Results-container{
+    // border-style:dashed;
+    // border-color: rgb(209, 38, 52);
+    // border-width: 7px;
+    width: 100%;
+    height:70%; 
+    // margin-right: 3.7rem;
+    @media(max-width: $bigScreen-BreakPoint){
+        width: 100%;
+    height:50%; 
+    }
+
+}

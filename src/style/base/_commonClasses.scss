@@ -1,0 +1,77 @@
+.flex-center-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+        align-items: center;
+}
+// .flex-center-row-space-between{
+//     display: flex;
+//     flex-direction: row;
+//     justify-content: space-between;
+//         align-items: center;
+// }
+.flex-center-column{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.flex-right-row{
+    display: flex;
+    flex-direction: row;
+    align-items:flex-end;
+    // justify-content: space-around;    
+}
+.flex-right-column{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-end;
+    // justify-content: space-around;    
+}
+
+.font-vertica-horizontal-centering{
+//    vertical-align: middle; 
+//    text-align: center;
+align-items: center;
+   //    justify-content: space-around;
+//    justify-content: space-around;
+
+}
+.button{
+    // border-style:groove;
+    // border-color: blue;
+    // border-width: 6px;
+    // pointer-events: all;
+    cursor: pointer;
+        // padding-top:  0.6rem;
+    // padding-bottom:  0.6rem;
+    padding:0.4rem;
+    border-radius:$common-radius;
+background-color:$background-button;
+// margin-left: 0.3rem;
+
+}
+.button-hover:hover{
+    background-color:$background-button-hover;
+    // 
+
+
+}
+
+.sides-padding-added{
+    padding-right:1.2rem;
+    padding-left:1.2rem;
+    // @media(max-width: $padding-canceled-breakepoint){
+    //     padding-right:0rem;
+    //     padding-left:0rem;
+    
+    // }
+}
+
+
+.app-container{
+    font-family: "Rubik",sans-serif;
+    font-size: 18px;
+}
